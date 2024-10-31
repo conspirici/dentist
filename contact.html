@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Booking | Dentist.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Dentist.</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="cta-button">Get Your Smile</a>
+            <button id="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Book Your Appointment Today</h1>
+
+        <section class="appointment-form">
+            <form id="appointment-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Contact Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Appointment Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Needed</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="preventive">Preventive Care</option>
+                        <option value="cosmetic">Cosmetic Dentistry</option>
+                        <option value="emergency">Emergency Care</option>
+                    </select>
+                </div>
+                <button type="submit" class="cta-button">Book Appointment</button>
+            </form>
+        </section>
+
+        <section class="contact-details">
+            <h2>Contact Information</h2>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@dentist.com</p>
+            <p>Address: 123 Smile Street, Dental City, DC 12345</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@dentist.com</p>
+            <p>Address: 123  Smile Street, Dental City, DC 12345</p>
+        </div>
+        <a href="contact.html" class="contact-link">Contact Us</a>
+    </footer>
+
+    <div id="confirmation-popup" class="popup">
+        <div class="popup-content">
+            <h2>Thank you for scheduling!</h2>
+            <p>We've received your appointment request. Save the date on your calendar, and we'll be in touch soon!</p>
+            <button id="close-popup" class="cta-button">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentist. | Caring for Your Smile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Dentist.</a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="cta-button">Get Your Smile</a>
+            <button id="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Caring for Your Smile, One Visit at a Time</h1>
+                <p>Experienced, gentle dental care tailored to your needs.</p>
+                <a href="contact.html" class="cta-button">Book Appointment</a>
+            </div>
+            <div class="hero-image">
+                <img src="/assets/photo.jpg" alt="Welcoming dental office" width="400" height="400">
+            </div>
+        </section>
+
+        <section class="problem-awareness">
+            <h2 class="section-title">Does this sound familiar?</h2>
+            <div class="problem-container">
+                <div class="problem">
+                    <i class="fas fa-tooth icon"></i>
+                    <h3>Tooth Pain or Discomfort?</h3>
+                    <p>We provide quick relief and lasting solutions.</p>
+                </div>
+                <div class="problem">
+                    <i class="far fa-smile icon"></i>
+                    <h3>Self-Conscious About Your Smile?</h3>
+                    <p>Discover our cosmetic dentistry options.</p>
+                </div>
+                <div class="problem">
+                    <i class="fas fa-exclamation-triangle icon"></i>
+                    <h3>Need Immediate Dental Attention?</h3>
+                    <p>Our emergency services are here for you.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="core-services">
+            <h2 class="section-title">Core Services</h2>
+            <div class="service-container">
+                <div class="service">
+                    <i class="fas fa-tooth icon"></i>
+                    <h3>Preventive Care</h3>
+                    <p>Keep your smile healthy with routine checkups and cleanings.</p>
+                    <a href="contact.html" class="cta-button">Book Appointment</a>
+                </div>
+                <div class="service">
+                    <i class="fas fa-smile-beam icon"></i>
+                    <h3>Cosmetic Dentistry</h3>
+                    <p>Enhance your smile with whitening, veneers, and more.</p>
+                    <a href="contact.html" class="cta-button">Book Appointment</a>
+                </div>
+                <div class="service">
+                    <i class="fas fa-heartbeat icon"></i>
+                    <h3>Emergency Care</h3>
+                    <p>Urgent dental care when you need it most.</p>
+                    <a href="contact.html" class="cta-button">Book Appointment</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <img src="/assets/p1.jpg" alt="John Doe" width="50" height="50">
+                    <div class="testimonial-content">
+                        <h3>John Doe</h3>
+                        <p>"Excellent service! The staff was very friendly and professional."</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <img src="/assets/p2.jpeg" alt="Jane Smith" width="50" height="50">
+                    <div class="testimonial-content">
+                        <h3>Jane Smith</h3>
+                        <p>"I'm so happy with my new smile! Thank you, Dentist."</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <img src="/assets/p3.jpg" alt="Mike Johnson" width="50" height="50">
+                    <div class="testimonial-content">
+                        <h3>Mike Johnson</h3>
+                        <p>"Quick and painless emergency care. Highly recommended!"</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="inquiry-form">
+            <h2 class="section-title">Get in Touch</h2>
+            <form id="inquiry-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="preventive">Preventive Care</option>
+                        <option value="cosmetic">Cosmetic Dentistry</option>
+                        <option value="emergency">Emergency Care</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            <p><i class="fas fa-envelope"></i> info@dentist.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Smile Street, Dental City, DC 12345</p>
+        </div>
+        <a href="contact.html" class="contact-link">Contact Us</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
